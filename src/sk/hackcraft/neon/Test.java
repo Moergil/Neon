@@ -1,4 +1,4 @@
-package sk.hackcraft.neoevents;
+package sk.hackcraft.neon;
 
 import sk.hackcraft.neoevents.messagequeue.ThreadMessageQueue;
 

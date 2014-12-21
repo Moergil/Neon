@@ -1,8 +1,8 @@
 package sk.hackcraft.neoevents.executors;
 
-import sk.hackcraft.neoevents.Event.Executer;
-import sk.hackcraft.neoevents.Event.Listener;
-import sk.hackcraft.neoevents.MessageQueue;
+import sk.hackcraft.neon.Event.Executer;
+import sk.hackcraft.neon.Event.Listener;
+import sk.hackcraft.neon.MessageQueue;
 
 public class MessageQueueExecuter implements Executer
 {

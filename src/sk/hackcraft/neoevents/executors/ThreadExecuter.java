@@ -1,7 +1,7 @@
 package sk.hackcraft.neoevents.executors;
 
-import sk.hackcraft.neoevents.Event;
-import sk.hackcraft.neoevents.Event.Listener;
+import sk.hackcraft.neon.Event;
+import sk.hackcraft.neon.Event.Listener;
 
 public class ThreadExecuter implements Event.Executer
 {

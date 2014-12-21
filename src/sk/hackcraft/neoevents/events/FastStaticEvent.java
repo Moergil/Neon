@@ -3,8 +3,8 @@ package sk.hackcraft.neoevents.events;
 import java.util.ArrayList;
 import java.util.List;
 
-import sk.hackcraft.neoevents.Event;
 import sk.hackcraft.neoevents.executors.ImmediateExecuter;
+import sk.hackcraft.neon.Event;
 
 public class FastStaticEvent<T> implements Event<T>
 {
@@ -13,7 +13,7 @@ public class FastStaticEvent<T> implements Event<T>
 	private final ArrayList<ListenerExecutorPair<T>> pairs = new ArrayList<>(1);
 	
 	@Override
-	public void attachListener(sk.hackcraft.neoevents.Event.Listener<T> listener)
+	public void attachListener(sk.hackcraft.neon.Event.Listener<T> listener)
 	{
 		attachListener(listener, defaultExecuter);
 	}

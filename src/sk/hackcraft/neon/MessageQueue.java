@@ -1,4 +1,4 @@
-package sk.hackcraft.neoevents;
+package sk.hackcraft.neon;
 
 /**
  * Execution mechanism for serially executing runnables, with option of delayed

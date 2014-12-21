@@ -1,7 +1,7 @@
 package sk.hackcraft.neoevents.executors;
 
-import sk.hackcraft.neoevents.Event;
-import sk.hackcraft.neoevents.Event.Executer;
+import sk.hackcraft.neon.Event;
+import sk.hackcraft.neon.Event.Executer;
 
 public class ImmediateExecuter implements Executer
 {
