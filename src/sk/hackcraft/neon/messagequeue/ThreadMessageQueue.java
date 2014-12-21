@@ -1,11 +1,11 @@
-package sk.hackcraft.neoevents.messagequeue;
+package sk.hackcraft.neon.messagequeue;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-import sk.hackcraft.neoevents.util.EnvironmentTime;
-import sk.hackcraft.neoevents.util.RealNanoEnvironmentTime;
 import sk.hackcraft.neon.MessageQueue;
+import sk.hackcraft.neon.util.EnvironmentTime;
+import sk.hackcraft.neon.util.RealNanoEnvironmentTime;
 
 public class ThreadMessageQueue implements MessageQueue, Runnable
 {

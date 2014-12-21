@@ -1,6 +1,6 @@
 package sk.hackcraft.neon;
 
-import sk.hackcraft.neoevents.messagequeue.ThreadMessageQueue;
+import sk.hackcraft.neon.messagequeue.ThreadMessageQueue;
 
 public class Test
 {

@@ -1,10 +1,10 @@
-package sk.hackcraft.neoevents.events;
+package sk.hackcraft.neon.events;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import sk.hackcraft.neoevents.executors.ImmediateExecuter;
 import sk.hackcraft.neon.Event;
+import sk.hackcraft.neon.executors.ImmediateExecuter;
 
 public class FastStaticEvent<T> implements Event<T>
 {

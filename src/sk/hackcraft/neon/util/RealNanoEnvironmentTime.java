@@ -1,4 +1,4 @@
-package sk.hackcraft.neoevents.util;
+package sk.hackcraft.neon.util;
 
 import java.util.concurrent.TimeUnit;
 

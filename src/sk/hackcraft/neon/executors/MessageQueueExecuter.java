@@ -1,4 +1,4 @@
-package sk.hackcraft.neoevents.executors;
+package sk.hackcraft.neon.executors;
 
 import sk.hackcraft.neon.Event.Executer;
 import sk.hackcraft.neon.Event.Listener;

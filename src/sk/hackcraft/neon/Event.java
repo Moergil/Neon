@@ -1,6 +1,6 @@
 package sk.hackcraft.neon;
 
-import sk.hackcraft.neoevents.executors.ImmediateExecuter;
+import sk.hackcraft.neon.executors.ImmediateExecuter;
 
 /**
  * <p>

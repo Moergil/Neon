@@ -1,4 +1,4 @@
-package sk.hackcraft.neoevents.util;
+package sk.hackcraft.neon.util;
 
 public class ManualEnvironmentTime implements EnvironmentTime
 {
