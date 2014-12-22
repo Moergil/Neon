@@ -7,6 +7,13 @@ import sk.hackcraft.neon.MessageQueue;
 import sk.hackcraft.neon.util.EnvironmentTime;
 import sk.hackcraft.neon.util.RealNanoEnvironmentTime;
 
+/**
+ * <p>
+ * Trivial implementation of {@link MessageQueue}. Message queue will start
+ * processing messages after its {@link #run()} method is called. This method
+ * will block until queue is stopped by calling {@link #requestStop()} method.
+ * </p>
+ */
 public class ThreadMessageQueue implements MessageQueue, Runnable
 {
 	private final EnvironmentTime time;
@@ -36,7 +43,7 @@ public class ThreadMessageQueue implements MessageQueue, Runnable
 			{
 				MessageHolder mh;
 				long delay;
-				
+
 				synchronized (this)
 				{
 					if (queue.isEmpty())
@@ -56,7 +63,7 @@ public class ThreadMessageQueue implements MessageQueue, Runnable
 
 					queue.remove();
 				}
-				
+
 				mh.getMessage().run();
 			}
 			catch (InterruptedException e)
@@ -86,7 +93,11 @@ public class ThreadMessageQueue implements MessageQueue, Runnable
 		}
 	}
 
-	public void stop()
+	/**
+	 * Insert stop message to this queue. After its execution, message queue will
+	 * stop processing next messages.
+	 */
+	public void requestStop()
 	{
 		post(() -> running = false);
 	}

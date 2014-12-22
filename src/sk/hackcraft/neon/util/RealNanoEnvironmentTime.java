@@ -2,23 +2,14 @@ package sk.hackcraft.neon.util;
 
 import java.util.concurrent.TimeUnit;
 
-public class RealNanoEnvironmentTime implements EnvironmentTime
+/**
+ * <p>{@link EnvironmentTime} implementation using {@link System#nanoTime()} as backend.</p>
+ */
+public final class RealNanoEnvironmentTime implements EnvironmentTime
 {
-	private volatile long lastValue;
-
 	@Override
 	public long getTime()
 	{
-		long value = TimeUnit.NANOSECONDS.toMillis(System.nanoTime());
-		
-		if (value < lastValue)
-		{
-			return lastValue;
-		}
-		else
-		{
-			lastValue = value;
-			return value;
-		}
+		return TimeUnit.NANOSECONDS.toMillis(System.nanoTime());
 	}
 }

@@ -2,6 +2,13 @@ package sk.hackcraft.neon.util;
 
 public interface EnvironmentTime
 {
-	// TODO documentation should guarantee that returned time is monotonic
+	/**
+	 * <p>Returns actual time value. Returned value is monotonic, so value of every
+	 * next call will be equals or more than previous value.</p>
+	 * 
+	 * <p>This method is thread safe.</p>
+	 * 
+	 * @return actual time value
+	 */
 	long getTime();
 }
